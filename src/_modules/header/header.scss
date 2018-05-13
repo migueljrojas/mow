@@ -33,6 +33,10 @@
                 animation-direction:reverse;
             }
         }
+
+        @include mq(md) {
+            display: none;
+        }
     }
 
     &.-open {

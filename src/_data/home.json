@@ -1,3 +1,63 @@
 {
-    
+    "seccion1":{
+        "texto1":"mow player",
+        "texto2":"the best way to add real value to your video content",
+        "texto3":"premium ad monetizacion, video header bidding. app-ctv video monetizacion"
+    },
+    "botones":{
+        "boton1":"learn more",
+        "boton2":"try it now"
+    },
+    "seccion2":{
+        "titulo":"how it works",
+        "contenido":"mow player is a self- serve video cms platform that wsorks seamlessly across all devices. just drag and drop your videos, create your playlist and start making money with your video content. yep, it's that easy and its free",
+        "iconos":[
+            "simple",
+            "profitable",
+            "measurable"
+        ],
+        "subtitulo":"mow player is free"
+    },
+    "seccion3":{
+        "titulo":"dfp technology partner",
+        "texto":"mowplayer is now certified google technological partner",
+        "boton":"check it out"
+    },
+    "seccion4":{
+        "titulo":"Getting started has never been easier",
+        "texto":"Make it Simple",
+        "contenido":[
+            "You just need to upload your videos to the platform, copy the code and implement it on your site.",
+            "You can also connect your YouTube / Facebook / Instagram channel directly to MOW. Maximize your content like never before.",
+            "Are you an App developer? Download our SDK and use our video technology to maximize your app."
+        ]
+    },
+    "seccion5":{
+        "titulo":"Get the most out of your videos",
+        "texto":"Make it Profitable",
+        "contenido":[
+            "Through our Header Bidding technology, your video content will be connected to over 50 programmatic buyers in real time. Why is this good news? You’ll get better fill rate and higher CPMs.",
+            "Or you can add your own VAST / VPAID codes to maximize your cross-device video content revenue.",
+            "Outstream Native Video: get all the perks of video ads even if you don’t generate video content.."
+        ]
+   },
+   "seccion6":{
+       "titulo":"Use data analysis to boost your revenue",
+       "texto":"Make it Measurable",
+       "contenido":[
+           "Use data analysis to boost your revenue. Identify your most engaging and profitable content.",
+           "Easy-to-read and complete dashboards for all your activity. Know more about your user behaivor and increase your engagement. Connect Mow with your google analytics account and get full detail of your audience traffic flow."
+       ]
+   },
+   "seccion7":{
+       "titulo":"The Player",
+       "contenido":[
+           "HTML5 High impact design with 100% visibility",
+           "Mow has developed the most advanced technology to display videos and ads only when they will be actually viewed. This ensures that engagement and ROI are measured accurately and with transparency."
+       ]
+    },
+    "seccion8":{
+        "titulo":"Get started now",
+        "texto":"Lorem ipsum dolor amet"
+    }
 }

@@ -6,11 +6,10 @@ button._button,
     display: inline-block;
     font-family: $mainFont;
     font-size: $xs;
-    font-weight: 700;
+    font-weight: 500;
     height: $base;
     line-height: $base;
-    max-width: 300px;
-    padding: 0 40px;
+    padding: 0 30px;
     text-align: center;
     transition: all $duration $easingLight;
     border-radius: $radius;
@@ -23,7 +22,9 @@ button._button,
 
     &.-white {
         background: $white;
-        color: $black;
+        color: $mainColor;
+        font-weight: 500;
+        border: 1px solid $white;
 
         &:hover{
             color: $mainColor;
@@ -44,6 +45,12 @@ button._button,
             background: $mainColor;
             padding: 0 40px;
         }
+    }
+
+    &.-ghost {
+        border: 1px solid $white;
+        color: $white;
+        background: transparent;
     }
 
     &.-large {

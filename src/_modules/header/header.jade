@@ -1,11 +1,25 @@
-header.header
+header.header.js-section.-ontop(data-section-name="home")
     .header__hamburguer
             span
             span
             span
             
     .header__logo
-        a(href="/")
+        a(href="/#home")
             | <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>   
-    
- 
+
+    nav.header__nav
+        ul.header__menu
+            each item in site.data.header
+                li
+                    a(href=item.url)= item.name
+                        if item.submenu
+                            i.material-icons keyboard_arrow_down
+                    if item.submenu
+                        ul.header__submenu
+                            each link in item.submenu
+                                li
+                                    a(href=link.url)= link.name
+            li.header__menu__cta
+                a(href="#get-started") Get Started
+                

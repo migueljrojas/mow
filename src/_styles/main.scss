@@ -21,6 +21,11 @@ body {
     overflow-x: hidden;
     width: 100vw;
     font-size: $sm;
+    color: $darkGray;
+}
+
+strong {
+    font-weight: 500;
 }
 
 a {
@@ -37,6 +42,10 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+h1,h2,h3 {
+    font-weight: 700;
 }
 
 // Styling on warning for users on IE7 or below

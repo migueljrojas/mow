@@ -2,6 +2,17 @@
 
     $h: &;
 
+    @include trans;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparentize($purple - #555, .2);
+    z-index: 1000;
+
     &__hamburguer {
         cursor: pointer;
         width: 25px;
@@ -36,6 +47,142 @@
 
         @include mq(md) {
             display: none;
+        }
+    }
+
+    &__logo {
+        @include trans;
+        width: 86px;
+        height: 21px;
+        position: relative;
+        z-index:5;
+
+        svg {
+            fill: $white;
+            width: 86px;
+            height: 21px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-shrink: 1;
+    }
+
+    &__menu {
+
+        @include mq(md){
+           display: flex;
+
+           @include mq(md){
+               justify-content: flex-start;
+               text-align: left;
+               margin-bottom: 0;
+           }
+        }
+
+        & > li {
+            position: relative;
+
+            @include mq(md){
+                margin-left: 40px;
+            }
+
+           &:not(:last-child){
+                border-bottom: 1px dotted $midGray;
+
+                @include mq(md){
+                   border: none;
+                }
+            }
+
+            &.header__menu__cta {
+                a {
+                    border: 1px solid $white;
+                    border-radius: 3px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        & > li > a{
+            @include trans;
+
+            color:$white;
+            font-weight: 500;
+            font-size: $xl;
+            display: block;
+            padding: 0 40px;
+            height: 50px;
+            display: block;
+            line-height: 50px;
+
+
+            @include mq(md){
+                position: relative;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: -0.1px;
+                height: 40px;
+                display: flex;
+                line-height: 40px;
+                margin-bottom: 0;
+                padding: 0;
+                justify-content: space-between;
+                align-items: center;
+
+                &:before {
+                    @include trans;
+
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    height: 2px;
+                    background: $pink;
+                    width: 0;
+                }
+            }
+
+            i.material-icons {
+                display: none;
+
+                @include mq(md) {
+                    display: inline-block;
+                    color: $lightGray;
+                    margin-left: 10px;
+                }
+            }
+
+            &:hover {
+                color: $white;
+
+                &:before {
+                    width: 100%;
+                }
+            }
+
+            &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &.-ontop {
+        background: transparent;
+
+        #{$h}__menu {
+            li {
+                a {
+                    &:before {
+                        background: $purple;
+                    }
+                }
+            }
         }
     }
 

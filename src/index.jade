@@ -2,3 +2,158 @@ extends _layouts/base
 
 block content
     main.home
+        section.home__hero
+            .container
+                .row
+                    .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4
+                        span.home__hero__subtitle=site.data.home.seccion1.texto1
+                        h1.home__hero__title=site.data.home.seccion1.texto2
+                        p.home__hero__text!=site.data.home.seccion1.texto3
+                        .home__hero__actions
+                            a._button.-ghost(href="#")=site.data.home.botones.boton1
+                            a._button.-white(href="#")=site.data.home.botones.boton2
+                        .home__hero__player
+                            img.img-responsive(src="/images/home/hero-player.png")
+                        
+        section.home__how.js-section#how(data-section-name="how-it-works")
+            .home__stage
+                ._circle
+                ._circle
+            .container
+                .row
+                    .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4
+                        h2.home__how__title=site.data.home.seccion2.titulo
+                        p.home__how__text=site.data.home.seccion2.contenido
+                        ul.home__how__icons
+                            each item in site.data.home.seccion2.iconos
+                                li.home__how__icon
+                                    .home__how__icon__img
+                                        img(src="/images/home/icon-#{item}.png")
+                                    span.home__how__icon__text= item
+                        h3.home__how__subtitle=site.data.home.seccion2.subtitulo
+                        
+        section.home__gpartners.js-section#DFP(data-section-name="DFP-technology-partner")
+            .home__stage
+                ._gicon
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-md-14.col-md-offset-2
+                        .home__gpartners__icon
+                            img(src="/images/home/icon-handshake.png")
+                        h2.home__gpartners__title=site.data.home.seccion3.titulo
+                        p.home__gpartners__text=site.data.home.seccion3.texto
+                        a._button(href="#")=site.data.home.seccion3.boton
+                    .col-xs-24.col-sm-8.col-md-6
+                        img.home__gpartners__logo.img-responsive(src="/images/home/google-partner-logo.png")
+                        
+        section.home__simple.js-section#simple(data-section-name="make-it-simple")
+            .home__stage
+                ._semicircle
+                ._semicircle
+            .container
+                .row
+                    .col-xs-24.col-sm-12
+                        img.img-responsive(src="/images/home/image-simple.png")
+                    .col-xs-24.col-sm-12.col-md-10.col-md-offset-2
+                        span.home__simple__subtitle=site.data.home.seccion4.texto
+                        h2.home__simple__title=site.data.home.seccion4.titulo
+                        ul.home__simple__features
+                            each item, index in site.data.home.seccion4.contenido
+                                li.home__simple__feature
+                                    span.home__simple__feature__index=index + 1
+                                    span.home__simple__feature__text=item
+                                    
+        section.home__profitable.js-section#profitable(data-section-name="make-it-profitable")
+            .home__stage
+                ._circle
+                ._circle
+            .container
+                .row
+                    .col-xs-24.col-sm-12.col-md-10
+                        span.home__profitable__subtitle=site.data.home.seccion5.texto
+                        h2.home__profitable__title=site.data.home.seccion5.titulo
+                        ul.home__profitable__features
+                            each item, index in site.data.home.seccion5.contenido
+                                li.home__profitable__feature
+                                    span.home__profitable__feature__index=index + 1
+                                    span.home__profitable__feature__text=item
+                    .col-xs-24.col-sm-12.col-md-offset-2
+                        img.img-responsive(src="/images/home/image-profitable.png")
+                        
+        section.home__manage.js-section#content(data-section-name="manage-your-content")
+            .home__stage
+                span._red
+                    i.fa.fa-facebook
+                span._red
+                    i.fa.fa-twitter
+                span._red
+                    i.fa.fa-instagram
+                span._red
+                    i.fa.fa-facebook
+                span._red
+                    i.fa.fa-twitter
+            .container
+                .row
+                    .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4
+                        .home__manage__features
+                            .home__manage__feature
+                                .home__manage__feature__icon
+                                    img(src="/images/home/icon-download.png")
+                                p.home__manage__feature__text Publish your videos directly to your Social Networks from MOW!
+                            .home__manage__feature
+                                .home__manage__feature__icon
+                                    img(src="/images/home/icon-download.png")
+                                p.home__manage__feature__text Add your videos from your Social Networks into MOW! 
+                        
+        section.home__content.js-section#generate(data-section-name="generate-your-content")
+            .home__stage
+                ._semicircle
+                ._semicircle
+                img._tablet(src="/images/home/image-player-tablet.png")
+            .container
+                .row
+                    .col-xs-24.col-sm-12
+                        img.img-responsive(src="/images/home/image-content.png")
+                    .col-xs-24.col-sm-12.col-md-10.col-md-offset-2
+                        h2.home__content__title=site.data.home.seccion6.titulo
+                        p.home__content__subtitle=site.data.home.seccion6.texto
+                        
+        section.home__player.js-section#player(data-section-name="the-player")
+            .home__stage
+                ._semicircle
+                ._semicircle
+                img._tablet(src="/images/home/image-player-tablet.png")
+            .container
+                .row
+                    .col-xs-24.col-sm-12.col-md-10
+                        h2.home__player__title=site.data.home.seccion7.titulo
+                        each item, index in site.data.home.seccion7.contenido
+                            p.home__player__text
+                    .col-xs-24.col-sm-12.col-md-offset-2
+                        .home__player__phone
+                            img(src="/images/home/image-player-phone.png")
+                            
+        section.home__started.js-section#started(data-section-name="get-started")
+            .container
+                .row
+                    .col-xs-24
+                        h2.home__started__title=site.data.home.seccion8.titulo
+                        p.home__started__text=site.data.home.seccion8.texto
+                    form.home__started__form.col-xs-24.col-md-18
+                        .row
+                            .col-xs-24.col-sm-8
+                                input.home__started__form__input(type="text", placeholder="First name")
+                            .col-xs-24.col-sm-8
+                                input.home__started__form__input(type="text", placeholder="Last name")
+                            .col-xs-24.col-sm-8
+                                input.home__started__form__input(type="email", placeholder="Email")
+                        .row
+                            .col-xs-24.col-sm-8
+                                input.home__started__form__input(type="password", placeholder="Password")
+                            .col-xs-24.col-sm-8
+                                input.home__started__form__input(type="password", placeholder="Confirm Password")
+                            .col-xs-24.col-sm-8
+                                input.home__started__form__checkbox(type="checkbox", id="terms")
+                                label.home__started__form__label(for="terms")
+                                    a(href="#") Terms and Conditions accepted
+                    

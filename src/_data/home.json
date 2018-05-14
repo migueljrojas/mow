@@ -1,31 +1,31 @@
 {
     "seccion1":{
-        "texto1":"mow player",
-        "texto2":"the best way to add real value to your video content",
-        "texto3":"premium ad monetizacion, video header bidding. app-ctv video monetizacion"
+        "texto1":"Mow Player",
+        "texto2":"The best way to add real value to your video content",
+        "texto3":"Free video player + Ad monetization | <strong>Add real value to your videos</strong>"
     },
     "botones":{
-        "boton1":"learn more",
-        "boton2":"try it now"
+        "boton1":"Learn more",
+        "boton2":"Try it now"
     },
     "seccion2":{
-        "titulo":"how it works",
-        "contenido":"mow player is a self- serve video cms platform that wsorks seamlessly across all devices. just drag and drop your videos, create your playlist and start making money with your video content. yep, it's that easy and its free",
+        "titulo":"How it works",
+        "contenido":"Mow player is a self- serve video cms platform that wsorks seamlessly across all devices. just drag and drop your videos, create your playlist and start making money with your video content. yep, it's that easy and its free",
         "iconos":[
             "simple",
             "profitable",
             "measurable"
         ],
-        "subtitulo":"mow player is free"
+        "subtitulo":"Mow player is free"
     },
     "seccion3":{
-        "titulo":"dfp technology partner",
-        "texto":"mowplayer is now certified google technological partner",
-        "boton":"check it out"
+        "titulo":"DFP Technology Partner",
+        "texto":"Mowplayer is now certified Google technological partner",
+        "boton":"Check it out"
     },
     "seccion4":{
-        "titulo":"Getting started has never been easier",
-        "texto":"Make it Simple",
+        "texto":"Getting started has never been easier",
+        "titulo":"Make it Simple",
         "contenido":[
             "You just need to upload your videos to the platform, copy the code and implement it on your site.",
             "You can also connect your YouTube / Facebook / Instagram channel directly to MOW. Maximize your content like never before.",
@@ -33,8 +33,8 @@
         ]
     },
     "seccion5":{
-        "titulo":"Get the most out of your videos",
-        "texto":"Make it Profitable",
+        "texto":"Get the most out of your videos",
+        "titulo":"Make it Profitable",
         "contenido":[
             "Through our Header Bidding technology, your video content will be connected to over 50 programmatic buyers in real time. Why is this good news? You’ll get better fill rate and higher CPMs.",
             "Or you can add your own VAST / VPAID codes to maximize your cross-device video content revenue.",
@@ -42,12 +42,8 @@
         ]
    },
    "seccion6":{
-       "titulo":"Use data analysis to boost your revenue",
-       "texto":"Make it Measurable",
-       "contenido":[
-           "Use data analysis to boost your revenue. Identify your most engaging and profitable content.",
-           "Easy-to-read and complete dashboards for all your activity. Know more about your user behaivor and increase your engagement. Connect Mow with your google analytics account and get full detail of your audience traffic flow."
-       ]
+       "texto":"Create new Audiovisual content in a simple way!",
+       "titulo":"Generate your content"
    },
    "seccion7":{
        "titulo":"The Player",

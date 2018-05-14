@@ -1,6 +1,18 @@
 [
     {
-        "name":"",
-        "url":""
+        "name":"How it works",
+        "url":"#how-it-works"
+    },
+    {
+        "name":"The Player",
+        "url":"#the-player"
+    },
+    {
+        "name":"Contact us",
+        "url":"#"
+    },
+    {
+        "name":"Log in",
+        "url":"#"
     }
 ]

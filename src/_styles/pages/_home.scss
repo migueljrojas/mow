@@ -1,3 +1,191 @@
+@mixin section-title($font-size:48px, $color: $darkestGray){
+    font-size: $font-size;
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 20px;
+    color: $color;
+}
+
+@mixin text($font-size:20px, $color: $darkGray){
+    font-size: $font-size;
+    line-height: 32px;
+    margin: 0 0 20px;
+    color: $color;
+}
+
 .home {
-    background: $mainColor;
+
+    section {
+        position: relative;
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__stage {
+        position: absolute;
+        top: 0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 0;
+    }
+
+    &__hero {
+        @include gradient($pink, $purple);
+        @include padd;
+
+        color: $white;
+        text-align: center;
+        margin-bottom: 150px;
+
+        .container {
+            //@include padd(top);
+        }
+
+        &__subtitle {
+            font-size: 24px;
+            display: block;
+            padding-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 52px;
+            line-height: 60px;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+
+        &__text {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__actions{
+            a {
+                margin: 0 7px;
+            }
+        }
+
+        &__player {
+            padding-top: 50px;
+            margin-bottom: -15vw;
+        }
+    }
+
+    &__how {
+        @include padd;
+        background: $white;
+        text-align: center;
+
+        &__title {
+            @include section-title;
+        }
+
+        &__text {
+            @include text;
+        }
+
+        &__icons {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 50px 0;
+        }
+
+        &__icon {
+            &__img {
+                display: block;
+                border-radius: 50%;
+                width: 200px;
+                height:200px;
+                background: $white;
+                box-shadow: 0 15px 20px 0 rgba(0,0,0,.05);
+                position: relative;
+                margin-bottom: 40px;
+
+                img {
+                    position: absolute;
+                    width: 100px;
+                    top:50%;
+                    left:50%;
+                    transform: translate3d(-50%,-50%,0);
+                }
+            }
+
+            &__text {
+                font-weight: 500;
+                color: $darkestGray;
+                text-transform: capitalize;
+            }
+        }
+
+        &__subtitle {
+            @include section-title(32px);
+            color: $purple;
+            font-weight: 300;
+        }
+    }
+
+    &__gpartners {
+        @include padd;
+
+        background: $darkGray;
+        color: $white;
+
+        &__logo {
+            margin-top: 100px;
+            display: block;
+        }
+    }
+
+    &__simple,
+    &__profitable,
+    &__content {
+        @include padd;
+
+        &__subtitle {
+            color: $purple;
+            font-weight: 500;
+        }
+
+        &__title {
+            @include section-title;
+            margin-bottom: 20px;
+        }
+
+        &__features {
+
+        }
+
+        &__feature {
+            display: flex;
+            margin-bottom: 40px;
+
+            &__index {
+                background: $purple;
+                flex-basis: 32px;
+                flex-shrink: 0;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: flex;
+                font-size: 18px;
+                font-weight: 700;
+                color: $white;
+                margin-right: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    &__simple {
+        padding-bottom: 0!important;
+    }
+
+    &__profitable {
+        background: $lightestGray;
+    }
 }
